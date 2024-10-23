@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transitions.css">
+    <link rel="stylesheet" href="svg.css">
+    <link rel="stylesheet" href="hover.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSS Snippets</h1>
+
+    <h2>Image Carousel</h2>
+    <div class="slider" style="
+        --width: 300px;
+        --height: 533.3px;
+        --quantity: 6;
+    ">
+        <div class="list">
+            <div class="item" style="--position:1"><img src="images/1.jpg" alt="1"></div>
+            <div class="item" style="--position:2"><img src="images/2.jpg" alt="2"></div>
+            <div class="item" style="--position:3"><img src="images/3.jpg" alt="3"></div>
+            <div class="item" style="--position:4"><img src="images/4.jpg" alt="4"></div>
+            <div class="item" style="--position:5"><img src="images/5.jpg" alt="5"></div>
+            <div class="item" style="--position:6"><img src="images/6.jpg" alt="6"></div>
+        </div>
+    </div>
+
+    <h2>Image Transitions</h2>
+    <div class="body">
+        <div class="wrapper">
+            <div class="container">
+                <div class="img1"></div>
+                <div class="img2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>SVG Animation</h2>
+        <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              AARYA
+            </text>
+        </svg>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: min(1000px, 100%);
+}
+
+.container {
+    position: relative;
+    aspect-ratio: 16/9;
+    transition: all 1s;
+}
+
+.img1,
+.img2 {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url(images/image1.jpeg);
+}
+
+/* SCENE TRANSITION 1 */
+/* .img2{
+    background-image: url(image2.jpg);
+    -webkit-mask-image: linear-gradient(to right, transparent 33%, #fff 67%);
+    mask-image: linear-gradient(to right, transparent 33%, #fff 67%);
+} */
+
+/* SCENE TRANSITION 2 */
+/* .img2{
+    background-image: url(image2.jpg);
+    -webkit-mask-image: linear-gradient(to right,transparent 47.5%,#fff 52.5%);
+    mask-image:linear-gradient(to right,transparent 47.5%,#fff 52.5%) ;
+    -webkit-mask-size: 210%;
+    mask-size: 210%;
+    -webkit-mask-position: left;
+    mask-position: left;
+
+}
+
+.container:hover .img2 {
+    -webkit-mask-position: right;
+    mask-position: right;
+    transition: -webkit-mask-position 2s linear;
+} */
+
+
+
+/* SCENE TRANSITION 3 */
+@keyframes scene-transition {
+    25% {
+        filter: brightness(100%);
+    }
+
+    100% {
+        filter: brightness(100%);
+        -webkit-mask-size: 1200%;
+        mask-size: 1200%;
+    }
+}
+
+.container:hover .img2 {
+    animation: scene-transition 2s cubic-bezier(1, 0, 1, 1) forwards;
+}
+.img2 {
+    background-image: url(images/image2.jpg);
+    filter: brightness(0%);
+    -webkit-mask-image: url(images/A_Black_Star.png);
+    mask-image: url(images/A_Black_Star.png);
+    -webkit-mask-size: 1%;
+    mask-size: 1%;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
