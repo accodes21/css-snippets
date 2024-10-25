@@ -12,6 +12,25 @@ h2{
     color: antiquewhite;
     margin: 1.2rem;
 }
+
+.btn-div{
+    text-align: center;
+}
+.button{
+    padding: .5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #9e1e1e;
+    transition: .1s all ease-in-out;
+    cursor: pointer;
+}
+.button a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.button:hover{
+    transform: scale(.95);
+}
 .slider{
     width: 100%;
     height: var(--height);
